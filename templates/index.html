@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Word Predictor</h1>
+
+        <!-- Prediction Form -->
+        <form id="predictor-form">
+            <h2>Get Predictions</h2>
+            <div class="form-group">
+                <label for="seed_word">Seed Word:</label>
+                <input type="text" id="seed_word" name="seed_word" placeholder="Enter a word">
+            </div>
+            <div class="form-group">
+                <label for="num_predictions">Number of Predictions:</label>
+                <input type="number" id="num_predictions" name="num_predictions" min="1" value="5">
+            </div>
+            <button type="submit">Get Predictions</button>
+        </form>
+
+        <div class="output">
+            <h2>Predictions:</h2>
+            <ul id="predictions-list"></ul>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
