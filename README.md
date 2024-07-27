@@ -1,12 +1,12 @@
-# Character-Level Markov Chain Predictor
+# Word-Level Markov Chain Predictor
 
-This project implements a character-level Markov chain model for predicting the next character based on a given seed character. It consists of a backend using Flask and a frontend with HTML, CSS, and JavaScript.
+This project implements a word-level Markov chain model for predicting the next word based on a given seed word. It consists of a backend using Flask and a frontend with HTML, CSS, and JavaScript.
 
 ## Project Structure
 
 - **Backend**:
   - `app.py`: The Flask application that serves the web interface and handles prediction requests.
-  - `markov_char.py`: Contains the Markov chain model for character-level prediction.
+  - `markov_char.py`: Contains the Markov chain model for word-level prediction.
 
 - **Frontend**:
   - `templates/index.html`: The main HTML file for the web interface.
@@ -51,7 +51,7 @@ This project implements a character-level Markov chain model for predicting the 
 3. **Open your browser** and navigate to `http://127.0.0.1:5000/`.
 
 4. **Interact with the web interface**:
-    - Enter a seed character in the "Seed Character" input field.
+    - Enter a seed word in the "Seed word" input field.
     - Specify the number of predictions in the "Number of Predictions" field.
     - Click "Get Predictions" to see the results.
 
@@ -83,7 +83,7 @@ In the web interface, after submitting the seed word `example` with `5` predicti
 ## File Descriptions
 
 - **`app.py`**: Defines the Flask app, handles requests, and serves the web interface.
-- **`markov_char.py`**: Implements the Markov chain model for character prediction.
+- **`markov_char.py`**: Implements the Markov chain model for word prediction.
 - **`templates/index.html`**: Provides the HTML structure and form for user input.
 - **`static/styles.css`**: Contains CSS styles for the web interface.
 - **`static/script.js`**: Manages form submission and AJAX requests.
